@@ -2,16 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(22, 80, 68)
+
+}
+
+#nav_index{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:800px){
+#Logo{
+    height: 100%;
+    background: none;
+}
+
+#Logo:hover{
+    cursor: pointer;
+}
+
+h2{
+    border:solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem; 
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+h2:hover{
+    background: rgba(248, 224, 160, 0.61)
+}
+
+article{
+    color: antiquewhite;
 }
 
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 15vh;
     background-color: rgb(4, 59, 38);
     font-family: sans-serif;
+}
+
+#nav_index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #nav-links{
@@ -45,6 +83,7 @@ nav{
 #nav-links a:hover{
     font-weight: bold;
     transition: ease 0.2s;
+    
 }
 
 .burger_line{
@@ -54,19 +93,66 @@ nav{
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
-}
     
+}
+
 #burger {
     margin-right: 5rem;
+    background: none;
 }
 
-#content{
+#textbox1{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background: rgba(222, 184, 135, 0.827);
-    height: 20vh;
-    width: 90vw;
-    font-size: 3rem;
 }
 
+#textbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridwrapper{
+    background: #111;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a1"
+    "a2"
+    ;
+    width: 100%;
+}
+
+.size{
+    height: 80%;
+    width: 90%;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+#Art1{
+    grid-area: a1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#Art2{
+    grid-area: a2;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background: rgba(150, 87, 87, 0.39)
+}
+
+.frontimg{
+    height: 50vh;
+}
+#footer{
+
+}
+
+}
