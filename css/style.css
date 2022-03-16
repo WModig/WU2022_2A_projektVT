@@ -2,18 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 
 #nav_index{
+    height: 15vh;
+    padding: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    background-color: rgb(4, 59, 38);
+    width: 100%;
+    align-items: center;
 }
 
-@media screen and (min-width:800px){
+
 #Logo{
     height: 100%;
     background: none;
+    display: none;
+}
+
+
+
+.imgs1{
+    width: 100%;
+}
+
+#footer{
+    grid-area: fo;
+    background: gray;
+    height: 100px;
+}
+@media screen and (min-width:800px){
+#Logo{
+    display: block;
+}
+
+#nav_index{
+    padding: 0;
 }
 
 #Logo:hover{
@@ -37,20 +65,7 @@ article{
     color: antiquewhite;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 15vh;
-    background-color: rgb(4, 59, 38);
-    font-family: sans-serif;
-}
 
-#nav_index{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 #nav-links{
     display: flex;
@@ -97,7 +112,6 @@ nav{
 }
 
 #burger {
-    margin-right: 5rem;
     background: none;
 }
 
@@ -115,13 +129,13 @@ nav{
 
 #gridwrapper{
     background: #111;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 100px;
     grid-template-areas: 
     "a1"
     "a2"
+    "fo"
     ;
     width: 100%;
 }
@@ -145,13 +159,19 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    background: rgba(150, 87, 87, 0.39)
 }
 
 .frontimg{
-    height: 50vh;
+    height: 100%;
 }
+
+.imgs1{
+    height: 50vh;
+    width: auto;
+}
+
 #footer{
+    grid-area: fo;
 
 }
 
