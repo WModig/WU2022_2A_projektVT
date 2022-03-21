@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #111;
 }
 
 
@@ -10,13 +11,27 @@
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
-    color: whitesmoke;
-    font-size: 1.2rem;
     background-color: rgb(4, 59, 38);
     width: 100%;
     align-items: center;
 }
 
+h2{
+    border:solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem; 
+    background: none;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
 
 #Logo{
     height: 100%;
@@ -24,10 +39,28 @@
     display: none;
 }
 
+.burger_line{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;   
+}
+#burger{
+    background:none;
+}
 
-
-.imgs1{
+#imgs1{
     width: 100%;
+    grid-area: i1;
+    display: grid;
+}
+
+#imgs2{
+    width:100%;
+    grid-area: i2;
+    display: grid;
 }
 
 #footer{
@@ -35,6 +68,38 @@
     background: gray;
     height: 100px;
 }
+
+#gridwrapper{
+    background: #111;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 100px;
+    grid-template-areas:
+    "t1"
+    "i1"
+    "t2"
+    "i2"
+    "fo"
+    ;
+}
+
+#textbox1{
+    grid-area: t1;
+    display: grid;
+}
+
+#textbox2{
+    grid-area: t2;
+    display: grid;
+}
+
+
+#footer{
+    grid-area: fo;
+    display: grid;
+}
+
 @media screen and (min-width:800px){
 #Logo{
     display: block;
@@ -48,14 +113,7 @@
     cursor: pointer;
 }
 
-h2{
-    border:solid;
-    padding: 0.5rem;
-    border-radius: 0.3rem; 
-    background: none;
-    display: flex;
-    justify-content: center;
-}
+
 
 h2:hover{
     background: rgba(248, 224, 160, 0.61)
@@ -99,20 +157,6 @@ article{
     font-weight: bold;
     transition: ease 0.2s;
     
-}
-
-.burger_line{
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    border-radius: 10%;
-    transition: all 0.5s;
-    
-}
-
-#burger {
-    background: none;
 }
 
 #textbox1{
@@ -170,9 +214,5 @@ article{
     width: auto;
 }
 
-#footer{
-    grid-area: fo;
-
-}
 
 }
