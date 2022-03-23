@@ -7,22 +7,31 @@
     <title>Nordic Wellness </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    body{
+        background-image: url('img/pedro-araujo-PDjYClxmnyk-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
 <body>
 
     <nav id="nav_index">
         <img id="Logo" src="img/nordic_wellness_logo.png" alt="">
-        <h2>Hälsa</h2>
-        <h2>Träning</h2>
-        <h2>Gemenskap</h2>
+        <ul id="linksparent">
+            <li class="header-links"><a href="Om oss.html">Om oss</a></li>
+            <li class="header-links"><a href="">Träningspass</a></li>
+            <li class="header-links"><a href="">Träning</a></li>
+        </ul>
 
+        <div id="burger" class="crossed_line">
 
-            <div id="burger" class="crossed_line">
+            <div id="line1" class="burger_line"></div>
+            <div id="line2" class="burger_line"></div>
+            <div id="line3" class="burger_line"></div>
 
-                <div id="line1" class="burger_line"></div>
-                <div id="line2" class="burger_line"></div>
-                <div id="line3" class="burger_line"></div>
-
-            </div>
+        </div>
     </nav>
     <div id="gridwrapper">
         <article id="Art1">
@@ -31,7 +40,7 @@
             </div>
             <section id="textbox1">
                 <div class="size">
-                    <h2>Ipsum</h2>
+                    <h3>Ipsum</h3>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in turpis sit amet massa luctus porttitor eget at urna. Curabitur urna eros, mattis ac lectus ut, hendrerit sagittis dolor. Donec iaculis, elit nec fringilla consequat, odio lectus vehicula massa, et rhoncus ante elit id nibh.</p>
                 </div>
@@ -41,7 +50,7 @@
         <article id="Art2">
             <section id="textbox2">
                 <div class="size">
-                    <h2>Lorem</h2>
+                    <h3>Lorem</h3>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in turpis sit amet massa luctus porttitor eget at urna. Curabitur urna eros, mattis ac lectus ut, hendrerit sagittis dolor. Donec iaculis, elit nec fringilla consequat, odio lectus vehicula massa, et rhoncus ante elit id nibh.</p>
                 </div>
@@ -51,7 +60,11 @@
             </div>
         </article>
 
-        <footer id="footer">hello</footer>
+        <footer id="footer">
+            <h3>Nordic Wellness<p>dsadas</p></h3>
+            <h3>Följ oss</h3>
+            
+        </footer>
     </div>
     <script src="js/script.js"></script>
 </body>
