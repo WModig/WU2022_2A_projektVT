@@ -4,26 +4,30 @@
     box-sizing: border-box;
 }
 
-
 nav{
     flex: 1;
     text-align: right;
     height: 10vh;
+    width: 100%;
+    min-width: 320px;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(4, 59, 38);
-    width: 100%;
+    
     align-items: center;
+
 }
 nav ul li{
     text-decoration: none;
     color: black;
-    background-color: rgb(241, 210, 171);
-    letter-spacing: 0.1rem;
+    background-color: rgb(61, 61, 61);
     border: solid;
     padding: 0.5rem;
     display: inline-block;
 
+}
+#linksparent{
+    min-width: 420px;
 }
 
 .header-links a{
@@ -31,24 +35,24 @@ nav ul li{
     text-decoration: none;
 }
 
-h3{
-    padding: 0.5rem;
-    background: none;
-    display: flex;
-    justify-content: center;
-    color: whitesmoke;
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#section1{
+    background-color: rgb(49, 49, 49, 0.85);
+}
+#section2{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#section3{
+    background-color: rgb(49, 49, 49, 0.85);
 }
 
-
 p{
-    color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
 }
 
 #Logo{
-    height: 100%;
+    height: 60%;
     background: none;
     display: none;
 }
@@ -65,17 +69,6 @@ p{
     background:none;
 }
 
-#imgs1{
-    width: 100%;
-    grid-area: i1;
-    display: grid;
-}
-
-#imgs2{
-    width:100%;
-    grid-area: i2;
-    display: grid;
-}
 
 #footer{
     background-color: rgb(4, 59, 38);
@@ -84,24 +77,75 @@ p{
     justify-content: space-evenly;
 }
 
-#gridwrapper{
-    background: rgba(17, 17, 17, 0.404);
-    height: 120vh;
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "t1"
-    "i1"
-    "t2"
-    "i2"
-    ;
+
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+
+}
+  
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+  
+h1,
+h2,
+h3 {
+    color: rgb(167, 166, 166);
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+}
+  
+h2,
+h3,
+p {
+    margin-bottom: 1em;
 }
 
-#container{
-height: 100vh;
+img {
+    display: block;
+    max-width: 100%;
 }
+  
+.text-center {
+    text-align: center;
+}
+  
+header,
+section {
+    padding: 4rem 0;
+    @media (min-width: 40em) {
+      header,
+      section {
+        padding: 7rem 0;
+      }
+    }
+}
+  
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+  
+.split {
+    display: flex;
+    flex-direction: column;
+}
+  
 
 @media screen and (min-width:800px){
 #Logo{
@@ -116,115 +160,46 @@ height: 100vh;
     width: 100%;
     align-items: center;
 }
-
-
-
-
-
-h2:hover{
-    background: rgba(248, 224, 160, 0.61)
+#linksparent{
+    min-width: 300px;
 }
-
-article{
-    color: antiquewhite;
-}
-
-
-
-#nav-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 85vh;
-    background-color: bisque;
-    position:absolute;
-    top: -85vh;
-    right: 0px;
-    width: 200px;
-    align-items: center;
-    list-style: none;
-    transition: ease 0.3s;
-}
-
 .header-links{
     margin-right: 2rem;
-    width: 12rem
+    width: 8rem
 }
 
 .header-links a{
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    color: black;
-    background-color: rgb(241, 210, 171);
-    font-size: 1.75rem;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem;
 }
 .nav-active{
     transform: translateY(100vh)
 }
 .header-links a:hover{
     font-weight: bold;
-    transition: ease 0.2s;
-    
+
 }
 
-#textbox1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.split {
+    flex-direction: row;
 }
 
-#textbox2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.split > * {
+    flex-basis: 100%;
 }
 
-#gridwrapper{
-    background: rgba(17, 17, 17, 0.6);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 100px;
-    grid-template-areas: 
-    "a1"
-    "a2"
-    "fo"
-    ;
-    width: 100%;
-    height: 100vh;
-}
-
-.size{
-    height: 80%;
-    width: 50%;
-    margin: 2rem;
-    font-size: 1.5rem;
-}
-
-#Art1{
-    grid-area: a1;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-#Art2{
-    grid-area: a2;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-.frontimg{
-    height: 100%;
-}
-
-.imgs1{
-    height: 50vh;
-    width: auto;
+.split > * + * {
+    margin-left: 2em;
 }
 
 
+
+@media screen and (min-width:1090px){
+#Logo{
+   height: 100%;
+}
+.header-links{
+    width: 12rem;
+}
+}
 }
