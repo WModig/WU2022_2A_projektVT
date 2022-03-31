@@ -1,8 +1,10 @@
-<ul id="nav-links" class="nav-active">
+const nav = document.getElementById('linksparent')
+const burger = document.getElementById('burger')
+function toggleMenu() {
 
-<li> <a href="#">BILDER</a> </li>
-<li> <a href="#">KONTAKT</a> </li>
-<li> <a href="#">ÖVRIGT</a></li>
-<li> <a href="#">HEM</a></li>
+    nav.classList.toggle('linksparent-active')
+    burger.classList.toggle('crossed_line')
 
-</ul>
+}
+
+burger.addEventListener('click', toggleMenu)
