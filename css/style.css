@@ -5,7 +5,7 @@
 }
 
 body{
-    min-width: 320px;
+    min-width: 465px;
 }
 
 nav{
@@ -16,8 +16,7 @@ nav{
     min-width: 320px;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(4, 59, 38);
-    transition: ease 0.3s;
+    background-color: rgb(26, 26, 26);
     align-items: center;
 
 }
@@ -32,6 +31,24 @@ nav ul li{
 }
 #linksparent{
     min-width: 420px;
+    transition: ease 0.3s;
+}
+
+.linksparent-active{
+    display: block;
+    transform: translateY(-15vh);
+}
+
+.crossed_line #line2{
+    opacity: 0;
+}
+
+.crossed_line #line1{
+    transform: rotate(-45deg) translate(-5px, 6px)
+}
+
+.crossed_line #line3{
+    transform: rotate(45deg) translate(-5px, -6px)
 }
 
 .header-links a{
@@ -75,15 +92,14 @@ p{
 
 
 #footer{
-    background-color: rgb(4, 59, 38);
+    background-color: rgba(20, 20, 20, 0.863);
     height: 250px;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 1rem;
 }
 
-.linksparent-active{
-    display: none;
-}
+
   
 *,
 *::before,
@@ -142,6 +158,11 @@ section {
     margin-inline: auto;
     width: min(90%, 70.5rem);
 }
+
+#iframeparent{
+    display: flex;
+    justify-content: center;
+}
   
 .split {
     display: flex;
@@ -160,7 +181,7 @@ section {
     font-family: monospace;
     color: white;
 }
-  
+
 
 @media screen and (min-width:800px){
 #Logo{
@@ -210,6 +231,7 @@ section {
 .split > * + * {
     margin-left: 2em;
 }
+
 
 
 
