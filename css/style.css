@@ -17,13 +17,13 @@ nav{
     min-width: 320px;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(26, 26, 26);
+    background-color: #111;
     align-items: center;
 
 }
 nav ul li{
     text-decoration: none;
-    color: black;
+    color: rgb(26, 26, 26);
     background-color: rgb(61, 61, 61);
     border: solid;
     padding: 0.5rem;
@@ -70,13 +70,19 @@ nav ul li{
 p{
     color: #fff;
     font-family: 'Abel', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #Logo{
-    height: 60%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+#Logo img{
+    height: 55%;
     background: none;
     display: none;
+
 }
 
 .burger_line{
@@ -170,12 +176,6 @@ img {
 header,
 section {
     padding: 4rem 0;
-    @media (min-width: 40em) {
-      header,
-      section {
-        padding: 7rem 0;
-      }
-    }
 }
   
 .container {
@@ -194,7 +194,7 @@ section {
 }
 
 #pagehead{
-    background: black;
+    background: rgb(41, 41, 41);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,12 +206,26 @@ section {
     color: white;
 }
 
+.proList{
+    list-style: none;
+    color: #fff;
+}
+
+.proList p{
+    font-size: 1.4rem;
+}
 
 @media screen and (min-width:800px){
-#Logo{
+
+header,
+section {
+  padding: 7rem 0;
+}
+
+#Logo img{
     display: block;
 }
-#Logo:hover{
+#Logo img:hover{
     cursor: pointer;
 }
 
@@ -263,8 +277,8 @@ section {
 nav{
     height: 15vh;
 }
-#Logo{
-   height: 100%;
+#Logo img{
+   height: 77%;
 }
 .header-links{
     width: 12rem;
