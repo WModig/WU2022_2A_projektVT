@@ -6,6 +6,7 @@
 
 body{
     min-width: 465px;
+    max-height: 200vh;
 }
 
 nav{
@@ -52,7 +53,7 @@ nav ul li{
 }
 
 .header-links a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ p{
 .burger_line{
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;   
@@ -90,17 +91,40 @@ p{
     background:none;
 }
 
-
-#footer{
-    background-color: rgba(20, 20, 20, 0.863);
-    height: 250px;
+footer{
+    background: rgb(129, 129, 129);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.footercontent{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
+.footercontent p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    color: #cacdd2;
+}
 
-  
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li img{
+    margin: 0 10px;
+    color: #fff;
+    border: 1.1px solid white;
+    border-radius: 50%;
+}
 *,
 *::before,
 *::after {
