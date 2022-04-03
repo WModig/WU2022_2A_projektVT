@@ -215,7 +215,40 @@ section {
     font-size: 1.4rem;
 }
 
+.gridwrapper{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: #111;
+}
+
+.main-content, .sidebar{
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.main-content{
+    background: rgb(43, 43, 43);
+    background: linear-gradient(90deg, rgb(54,54,54) 0%, rgba(0,0,0) 100%); 
+}
+
+.sidebar{
+    background: rgb(43, 43, 43);
+    background: linear-gradient(90deg, rgb(10, 10, 10) 0%, rgb(54, 54, 54) 100%); 
+}
+
+
+
 @media screen and (min-width:800px){
+
+.sidebar{
+    max-width: 800px;
+}
+
+.gridwrapper{
+    grid-template-columns: 1fr 450px;
+}
 
 header,
 section {
