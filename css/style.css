@@ -9,6 +9,20 @@ body{
     max-height: 200vh;
 }
 
+#one{
+    background-image: url('../img/pedro-araujo-PDjYClxmnyk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#two{
+    background-image: url('../img/photo-1571902943202-507ec2618e8f.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 nav{
     flex: 1;
     text-align: right;
