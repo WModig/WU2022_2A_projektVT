@@ -26,7 +26,7 @@ body{
 nav{
     flex: 1;
     text-align: right;
-    height: 10vh;
+    height: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -41,8 +41,15 @@ nav ul li{
     border: solid;
     padding: 0.5rem;
     display: inline-block;
-
 }
+
+.header-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
 #linksparent{
     transition: ease 0.3s;
 }
@@ -64,11 +71,6 @@ nav ul li{
     transform: rotate(45deg) translate(-5px, -6px)
 }
 
-.header-links a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
 
 #section1{
     background-color: rgb(49, 49, 49, 0.85);
@@ -166,6 +168,7 @@ p {
     margin: 0;
 }
 
+h1,
 h2,
 h3 {
     color: rgb(240, 240, 240);
@@ -174,12 +177,16 @@ h3 {
     line-height: 1;
 }
   
+h1,
 h2,
 h3,
 p {
     margin-bottom: 1em;
 }
 
+h2{
+    margin-top:  1em;
+}
 img {
     display: block;
     max-width: 100%;
@@ -293,6 +300,7 @@ section {
 }
 
 .header-links a{
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
 }
